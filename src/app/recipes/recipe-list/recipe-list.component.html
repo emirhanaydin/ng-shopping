@@ -6,13 +6,11 @@
 <div class="row">
   <div class="col-sm-12">
     <div class="list-group">
-      <a *ngFor="let recipe of recipes" class="list-group-item list-group-item-action" href="#">
-        <div class="float-left">
-          <h6>{{ recipe.name }}</h6>
-          <p class="mb-0">{{ recipe.description }}</p>
-        </div>
-        <div [style.background-image]="'url(' + recipe.imageUri + ')'" class="circle-avatar-thumb float-right"></div>
-      </a>
+      <div (click)="recipeSelected.emit(recipe)"
+           *ngFor="let recipe of recipes"
+           class="list-group-item list-group-item-action unselectable">
+        <app-recipe-item [recipe]="recipe"></app-recipe-item>
+      </div>
     </div>
   </div>
 </div>

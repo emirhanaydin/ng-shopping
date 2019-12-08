@@ -1,1 +1,5 @@
-<p>recipe-item works!</p>
+<div class="float-left">
+  <h6>{{ recipe.name }}</h6>
+  <p class="mb-0">{{ recipe.description }}</p>
+</div>
+<div [style.background-image]="'url(' + recipe.imageUri + ')'" class="circle-avatar-thumb float-right"></div>
