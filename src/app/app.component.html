@@ -1,5 +1,4 @@
-<app-header (navSelected)="onNavSelected($event)"></app-header>
+<app-header></app-header>
 <div class="container">
-  <app-recipes *ngIf="selectedNav === 'recipe'"></app-recipes>
-  <app-shopping-list *ngIf="selectedNav === 'shopping-list'"></app-shopping-list>
+  <router-outlet></router-outlet>
 </div>

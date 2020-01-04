@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-sm-12">
     <div class="list-group">
-      <div (click)="recipesService.recipeSelected.emit(recipe)"
+      <div (click)="onClickRecipe(recipe)"
            *ngFor="let recipe of recipes"
            class="list-group-item list-group-item-action unselectable">
         <app-recipe-item [recipe]="recipe"></app-recipe-item>

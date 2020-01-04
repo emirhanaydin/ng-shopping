@@ -15,9 +15,15 @@
         Manage Recipe <span class="caret"></span>
       </button>
       <ul class="dropdown-menu">
-        <li><a (click)="onClickAddToShoppingList()" href="#">Add To Shopping List</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
+        <li>
+          <button (click)="onClickAddToShoppingList()" class="btn btn-link">Add To Shopping List</button>
+        </li>
+        <li>
+          <button class="btn btn-link">Edit Recipe</button>
+        </li>
+        <li>
+          <button class="btn btn-link">Delete Recipe</button>
+        </li>
       </ul>
     </div>
   </div>
